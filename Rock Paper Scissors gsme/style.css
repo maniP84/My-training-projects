@@ -1,0 +1,211 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #050d15;
+    }
+    
+    #input {
+        margin-bottom: 6rem;
+        height: 2rem;
+        padding-left: 0.5rem;
+    }
+    
+    .nothing {
+        position: absolute;
+        margin-top: -10rem;
+        margin-left: 6.5rem;
+        width: 5rem;
+        height: 10rem;
+        border: 2px #4184f3 solid;
+        border-radius: 5px;
+    }
+    
+    i {
+        margin: auto;
+    }
+    
+    #paper {
+        margin-top: 0.6rem;
+        margin-left: 1.4rem;
+        color: #9d9fa5;
+        font-size: 2rem;
+        top: 2rem;
+        display: none;
+    }
+    
+    #scissors {
+        margin-top: 0.6rem;
+        margin-left: 1.4rem;
+        color: #9d9fa5;
+        font-size: 2rem;
+        top: 2rem;
+        display: none;
+    }
+    
+    #rock {
+        margin-top: 0.6rem;
+        margin-left: 1.4rem;
+        color: #9d9fa5;
+        font-size: 2rem;
+        top: 2rem;
+        display: none;
+        /* margin-top: 7rem; */
+    }
+    
+    #ptag {
+        display: block;
+        color: #ffffff;
+        font-size: 19px;
+        margin-top: -9rem;
+        margin-left: -0.7rem;
+    }
+    
+    #pCam {
+        display: flex;
+        color: #ffffff;
+        font-size: 19px;
+        margin-left: -10rem;
+        margin-top: -2rem;
+    }
+    
+    .nothing2 {
+        display: flex;
+    }
+    
+    #submit {
+        width: 5rem;
+        height: 2rem;
+        background-color: #4184f3;
+        color: #ffffff;
+        outline: none;
+        border: 0;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .nothing3 {
+        position: absolute;
+        top: 9rem;
+        left: 50rem;
+        display: inline;
+        border: orchid 2px solid;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 3.4rem;
+        border-radius: 4px;
+        padding-right: 1rem;
+        padding-top: -2rem;
+    }
+    
+    #paper2 {
+        margin-top: 0.6rem;
+        margin-left: 1.4rem;
+        font-size: 2rem;
+        top: 8rem;
+        color: #9d9fa5;
+        cursor: pointer;
+    }
+    
+    #scissors2 {
+        margin-top: -19rem;
+        margin-left: 1.4rem;
+        font-size: 2rem;
+        color: #9d9fa5;
+        cursor: pointer;
+    }
+    
+    #rock2 {
+        margin-top: -2rem;
+        margin-left: 1.4rem;
+        font-size: 2rem;
+        color: #9d9fa5;
+        top: 0rem;
+        cursor: pointer;
+    }
+    
+    #paper2:active {
+        color: #4184f3;
+        transition: 0.1s;
+    }
+    
+    #scissors2:active {
+        color: #4184f3;
+    }
+    
+    #rock2:active {
+        color: #4184f3;
+    }
+    
+    #paper3 {
+        position: absolute;
+        margin-top: 0.6rem;
+        margin-left: 1.4rem;
+        color: #9d9fa5;
+        font-size: 2rem;
+        top: 0rem;
+        display: none;
+    }
+    
+    #scissors3 {
+        position: absolute;
+        margin-top: 0.6rem;
+        margin-left: 1.4rem;
+        color: #9d9fa5;
+        font-size: 2rem;
+        top: 0rem;
+        display: none;
+    }
+    
+    #rock3 {
+        position: absolute;
+        margin-top: -1rem;
+        margin-left: 1.4rem;
+        color: #9d9fa5;
+        font-size: 2rem;
+        top: 0rem;
+        display: none;
+        /* margin-top: 7rem; */
+    }
+    
+    #win {
+        color: #ffffff;
+        position: absolute;
+        margin-left: 23rem;
+        /* margin-top: -9rem; */
+        top: 17rem;
+        font-size: 22px;
+        display: none;
+    }
+    
+    .last {
+        position: absolute;
+        color: #ffffff;
+        font-size: 21px;
+        top: 9.5rem;
+        left: 36rem;
+    }
+    
+    #score {
+        position: absolute;
+        color: #ffffff;
+        font-size: 2.3rem;
+        top: 25.5rem;
+        left: 55rem;
+    }
+    
+    #C-score {
+        position: absolute;
+        color: #ffffff;
+        font-size: 2.3rem;
+        top: 30rem;
+        left: 55rem;
+    }

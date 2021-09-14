@@ -1,0 +1,197 @@
+/* WEB230 Final Project - Hangman Game */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    /* height: 100%; */
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 6em auto 300px 6rem 2rem;
+    align-content: flex-start;
+    height: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#letters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1em 0;
+    font-family: 'Comic Sans MS', sans-serif;
+    cursor: pointer;
+}
+
+#letters div {
+    margin: 5px;
+    padding-top: 0.5em;
+    border: 1px solid gray;
+    color: darkgreen;
+    width: 2em;
+    height: 2em;
+    line-height: 0.9;
+    overflow: hidden;
+}
+
+#letters div:hover {
+    background-color: palegreen;
+}
+
+#clue p {
+    margin: 0;
+    margin-top: 10rem;
+    font-size: 3rem;
+    letter-spacing: 0.5em;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+
+/* 
+ This class will grey out the letters as they are used. 
+ Just add the class "used".
+ */
+
+#letters div.used {
+    background-color: lightgray;
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: none;
+}
+
+section#image {
+    text-align: center;
+}
+
+
+/* 
+ Display the message when the game is over. 
+ Hide it at the beginning. 
+ */
+
+section#gameover p {
+    text-align: center;
+    font-size: 1rem;
+    display: none;
+}
+
+.return {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+#return {
+    width: 5rem;
+    height: 2rem;
+    margin-top: 15rem;
+    /* margin-left: 50%; */
+    color: #ffffff;
+    background: #fe0102;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 3;
+    z-index: 12000;
+}
+
+.new {
+    margin: 5px;
+    padding-top: 0.5em;
+    border: 1px solid gray;
+    color: darkgreen;
+    width: 2em;
+    height: 2em;
+    line-height: 0.9;
+    overflow: hidden;
+}
+
+#zoom {
+    position: fixed;
+    width: 100vw;
+    height: 100vw;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all ease-in-out;
+}
+
+#score {
+    color: green;
+    font-size: 4rem;
+    margin-left: 1rem;
+    z-index: 120;
+}
+
+#loses {
+    color: red;
+    font-size: 4rem;
+    margin-left: 1rem;
+    z-index: 120;
+}
+
+#won {
+    color: #ffffff;
+}
+
+#lose {
+    color: #ffffff;
+}
+
+#player {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 120;
+}
+
+#player-lose {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 9rem;
+    z-index: 120;
+}
+
+#scores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 120;
+}
+
+#again {
+    position: fixed;
+    width: 16rem;
+    height: 4rem;
+    margin-top: 37rem;
+    margin-left: 42%;
+    color: #ffffff;
+    background: #fe0102;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 12000;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/* WEB230 Final Project Winter 2021 */

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="hangman.css" rel="stylesheet">
+    <title>Hangman</title>
+</head>
+
+<body>
+    <h1>Hangman</h1>
+    <div id="scores">
+        <div id="zoom"></div>
+        <div id="player">
+            <P id="won">Your Score :</P>
+            <p id="score">0</p>
+        </div>
+        <div id="player-lose">
+            <p id="lose">Match You Lose :</p>
+            <p id="loses">0</p>
+        </div>
+    </div>
+    <section id="letters" class="letters">
+        <div class="mani" id="A">A</div>
+        <div class="mani" id="B">B</div>
+        <div class="mani" id="C">C</div>
+        <div class="mani" id="D">D</div>
+        <div class="mani" id="E">E</div>
+        <div class="mani" id="F">F</div>
+        <div class="mani" id="G">G</div>
+        <div class="mani" id="H">H</div>
+        <div class="mani" id="I">I</div>
+        <div class="mani" id="J">J</div>
+        <div class="mani" id="K">K</div>
+        <div class="mani" id="L">L</div>
+        <div class="mani" id="M">M</div>
+        <div class="mani" id="N">N</div>
+        <div class="mani" id="O">O</div>
+        <div class="mani" id="P">P</div>
+        <div class="mani" id="Q">Q</div>
+        <div class="mani" id="R">R</div>
+        <div class="mani" id="S">S</div>
+        <div class="mani" id="T">T</div>
+        <div class="mani" id="U">U</div>
+        <div class="mani" id="V">V</div>
+        <div class="mani" id="W">W</div>
+        <div class="mani" id="X">X</div>
+        <div class="mani" id="Y">Y</div>
+        <div class="mani" id="Z">Z</div>
+    </section>
+    <button onclick="restart1()" id="again" type="button">Play again</button>
+    <section id="image">
+        <img src="assets/hangman0.png" alt="hangman">
+    </section>
+
+    <!-- Here you will display the hint for the message. Use an underscore for each letter and a space fo a space. -->
+    <section id="clue">
+        <p id="p-clue">________</p>
+    </section>
+
+    <!-- Show this message at the end of the game and reset the game. -->
+    <section id="gameover">
+        <p>Game Over</p>
+    </section>
+    <div class="return">
+        <button onclick="restart1()" id="return" type="button">restart</button>
+    </div>
+</body>
+<script src="hangman.js" defer></script>
+
+</html>
